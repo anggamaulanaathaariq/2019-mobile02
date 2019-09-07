@@ -11,18 +11,12 @@ import android.widget.EditText;
 import java.util.Random;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
-
 public class MainActivity extends AppCompatActivity {
 	private Button rtReset;
 	private Button btnAngka;
 	private EditText etAngka;
 	private int angkaRandom = (int) (Math.random() * 3);
 	//  TODO: deklarasikan variabel di sini
-//	int angkaRandom = (int) (Math.random() * 0);
-//	int a = (int) (Math.random() * 10);
-//	int c = 2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 		etAngka = (EditText) findViewById(R.id.etTebak);
 		rtReset = (Button) findViewById(R.id.resButton);
 		angkaRandom = buatAngkaRandom(1, 3);
-//		initRandomNumber(buatAngkaRandom();
 		// TODO: bind layout di sini
 	}
 
@@ -46,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
 				}
 			}
 		});
-
 	}
 	public void handleGuess(View view) {
 		int angkaTebakan = Integer.parseInt(etAngka.getText().toString());
