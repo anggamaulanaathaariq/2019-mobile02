@@ -18,7 +18,7 @@
 		/>
 
 	<EditText
-		android:id="@+id/number_input"
+		android:id="@+id/etTebak"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
@@ -27,16 +27,17 @@
 		/>
 
 	<Button
-		android:id="@+id/guess_button"
+		android:id="@+id/btTebakAngka"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
 		android:text="@string/guess"
 		android:onClick="handleGuess"
+		android:clickable="false"
 		/>
 
 	<Button
-		android:id="@+id/reset_button"
+		android:id="@+id/resButton"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_margin="10dp"
