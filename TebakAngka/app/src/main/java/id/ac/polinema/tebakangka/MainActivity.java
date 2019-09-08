@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 	private Button rtReset;
 	private Button btnAngka;
 	private EditText etAngka;
-	private int angkaRandom = (int) (Math.random() * 3);
+	private int angkaRandom = (int) (Math.random() * 5);
 	//  TODO: deklarasikan variabel di sini
 
 	@Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 		btnAngka = (Button) findViewById(R.id.btTebakAngka);
 		etAngka = (EditText) findViewById(R.id.etTebak);
 		rtReset = (Button) findViewById(R.id.resButton);
-		angkaRandom = buatAngkaRandom(1, 3);
+		angkaRandom = buatAngkaRandom(1, 5);
 		// TODO: bind layout di sini
 	}
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 		} else {
 			Toast.makeText(this, "Tebakan Anda Salah", Toast.LENGTH_SHORT).show();
 		}
-		angkaRandom = buatAngkaRandom(1, 3);
+		angkaRandom = buatAngkaRandom(1, 5);
 	}
 	private int buatAngkaRandom(int angkaMin, int angkaMax) {
 		Random rand = new Random();
